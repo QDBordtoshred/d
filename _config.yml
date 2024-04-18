@@ -2,8 +2,8 @@ title: Platformer 3.0
 description: "Spring 2024"
 owner_name: Nighthawk Coding 
 github_username: nighthawkcoders
-github_repo: "platformer3x"
-baseurl: "/platformer3x"
+github_repo: "d"
+baseurl: "/d"
 future: true
 remote_theme: jekyll/minima
 minima:
