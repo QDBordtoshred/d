@@ -559,7 +559,7 @@ const GameSetup = {
 
         const spaceGameObjects = [
           // GameObject(s), the order is important to z-index...
-          { name: 'space', id: 'background', class: Background, data: this.assets.backgrounds.space },
+          { name: 'mini', id: 'background', class: Background, data: this.assets.backgrounds.mini },
           { name: 'grass', id: 'platform', class: Platform, data: this.assets.platforms.grass },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.2, yPercentage: 0.85 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.2368, yPercentage: 0.85 },
