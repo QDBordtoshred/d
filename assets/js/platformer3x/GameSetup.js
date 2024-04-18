@@ -557,7 +557,7 @@ const GameSetup = {
 
         new GameLevel( {tag: "space", callback: this.playerOffScreenCallBack, objects: spaceGameObjects} );
 
-        const spaceGameObjects = [
+        const miniGameObjects = [
           // GameObject(s), the order is important to z-index...
           { name: 'mini', id: 'background', class: Background, data: this.assets.backgrounds.mini },
           { name: 'grass', id: 'platform', class: Platform, data: this.assets.platforms.grass },
@@ -580,7 +580,7 @@ const GameSetup = {
           { name: 'complete2', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete2 },
         ];
         // Space Game Level added to the GameEnv ...
-        new GameLevel( {tag: "mini", callback: this.playerOffScreenCallBack, objects: spaceGameObjects} );
+        new GameLevel( {tag: "mini", callback: this.playerOffScreenCallBack, objects: miniGameObjects} );
 
         // Game Over Level definition...
         const endGameObjects = [
