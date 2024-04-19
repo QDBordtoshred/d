@@ -204,7 +204,7 @@ const GameSetup = {
         mountains: { src: "/images/platformer/backgrounds/mountains.jpg" },
         clouds : { src: "/images/platformer/backgrounds/clouds.png"},
         space: { src: "/images/platformer/backgrounds/planet.jpg" },
-        mini: { src: "/images/platformer/backgrounds/mini.jpg" },
+        mini: { src: "/images/platformer/backgrounds/mini.png" },
         castles: { src: "/images/platformer/backgrounds/castles.png" },
         loading: { src: "/images/platformer/backgrounds/greenscreen.png" },
         complete: { src: "/images/platformer/backgrounds/OneStar.png" },
