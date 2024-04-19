@@ -572,7 +572,7 @@ const GameSetup = {
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.1908, yPercentage: 0.75 },
           { name: 'mario', id: 'player', class: PlayerHills, data: this.assets.players.mario },
           { name: 'tube', id: 'tube', class: Tube, data: this.assets.obstacles.tube },
-          { name: 'complete2', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete2 },
+          { name: 'complete', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete },
         ];
         // Space Game Level added to the GameEnv ...
         new GameLevel( {tag: "mini", callback: this.playerOffScreenCallBack, objects: miniGameObjects} );
