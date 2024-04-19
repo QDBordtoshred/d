@@ -570,7 +570,7 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.4104, yPercentage: 0.5 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.4472, yPercentage: 0.5 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.1908, yPercentage: 0.75 },
-          { name: 'mario', id: 'player', class: PlayerHills, data: this.assets.players.mario },
+          { name: 'monkey', id: 'player', class: Player, data: this.assets.players.monkey },
           { name: 'tube', id: 'tube', class: Tube, data: this.assets.obstacles.tube },
           { name: 'complete', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete },
         ];
