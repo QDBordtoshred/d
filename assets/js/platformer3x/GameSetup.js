@@ -571,7 +571,7 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.4472, yPercentage: 0.6 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.484, yPercentage: 0.6 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.5208, yPercentage: 0.6 },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.5576, yPercentage: 1.4 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.5576, yPercentage: 0.1 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.28, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.32, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.36, yPercentage: 0.5 },
