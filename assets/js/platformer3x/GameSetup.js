@@ -184,6 +184,7 @@ const GameSetup = {
         rock: { src: "/images/platformer/platforms/rock.png" },
         grass: { src: "/images/platformer/platforms/grass.png" },
         alien: { src: "/images/platformer/platforms/alien.png" },
+        lava: { src: "/images/platformer/platforms/lava.jpg" },
         bricks: { src: "/images/platformer/platforms/brick_wall.png" },
         block: { src: "/images/platformer/platforms/brick_block.png" }, //MAY need 3 new variables: sizeRatio, widthRatio, and heightRatio
         itemBlock: {
@@ -571,7 +572,7 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.4472, yPercentage: 0.6 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.484, yPercentage: 0.6 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.5208, yPercentage: 0.6 },
-          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.5576, yPercentage: 1.05 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.5576, yPercentage: 1.05 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.28, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.32, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.36, yPercentage: 0.5 },
