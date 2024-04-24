@@ -190,7 +190,7 @@ export class Player extends Character {
 
         //Prevent Player from Leaving from Screen
         if (this.x < 0) {
-            this.x = 0.5;
+            this.x = 1;
 
             GameEnv.backgroundHillsSpeed = 0;
             GameEnv.backgroundMountainsSpeed = 0;
