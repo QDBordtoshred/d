@@ -563,6 +563,11 @@ const GameSetup = {
           // GameObject(s), the order is important to z-index...
           { name: 'mini', id: 'background', class: Background, data: this.assets.backgrounds.mini },
           { name: 'rock', id: 'platform', class: Platform, data: this.assets.platforms.rock },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.6, yPercentage: 0.35 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.6368, yPercentage: 0.35 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.3, yPercentage: 0.35 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.3368, yPercentage: 0.35 },
+
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.3, yPercentage: 0.85 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.3368, yPercentage: 0.85 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.alien, xPercentage: 0.4684, yPercentage: 0.85 },
