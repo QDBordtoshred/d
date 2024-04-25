@@ -609,6 +609,13 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.8576, yPercentage: 0.4334 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.8576, yPercentage: 0.35 },
 
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.8576, yPercentage: 0.6 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.8208, yPercentage: 0.6 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.784, yPercentage: 0.6 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.7472, yPercentage: 0.6 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.7104, yPercentage: 0.6 },
+          { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.6736, yPercentage: 0.6 },
+
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.0736, yPercentage: 0.35 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.0736, yPercentage: 0.4334 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.0736, yPercentage: 0.5167 },
