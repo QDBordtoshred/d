@@ -3,7 +3,7 @@ import GameObject from './GameObject.js';
 
 export class Star extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
-        super(canvas, image, data, 1, 1);
+        super(canvas, image, data, 0.5, 0.5);
         this.starX = xPercentage * GameEnv.innerWidth;
         this.starY = yPercentage;
         this.size();
@@ -18,6 +18,9 @@ export class Star extends GameObject {
     draw() {
         // Save the current transformation matrix
         this.ctx.save();
+
+        // Rotate the canvas 90 degrees to the left
+        this.ctx.rotate(-Math.PI / 0);
 
         // Draw the image at the rotated position (swap x and y)
         this.ctx.drawImage(this.image, -this.image.height, 0);
