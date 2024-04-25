@@ -14,6 +14,7 @@ import PlayerHills from './PlayerHills.js';
 import Tube from './Tube.js';
 import Tree from './Tree.js';
 import Goomba from './Goomba.js';
+import Push from './Push.js';
 import FlyingGoomba from './FlyingGoomba.js';
 import BlockPlatform from './BlockPlatform.js';
 import Mushroom from './Mushroom.js';
@@ -278,6 +279,17 @@ const GameSetup = {
           xPercentage: 0.6,
           hitbox: { widthPercentage: 0.0, heightPercentage: 0.2}
         },
+
+        push: {
+          src: "/images/platformer/sprites/push.png",
+          width: 200,
+          height: 752,
+          scaleSize: 90,
+          speedRatio: 0.7,
+          xPercentage: 0.6,
+          hitbox: { widthPercentage: 0.0, heightPercentage: 1}
+        },
+
         flyingGoomba: {
           src: "/images/platformer/sprites/flying-goomba.png",
           width: 448,
@@ -566,7 +578,7 @@ const GameSetup = {
           { name: 'mini', id: 'background', class: Background, data: this.assets.backgrounds.mini },
           { name: 'rock', id: 'platform', class: Platform, data: this.assets.platforms.rock },
 
-          { name: 'goomba', id: 'goomba', class: Goomba, data: this.assets.enemies.goomba, xPercentage: 0.4472, yPercentage: 0.6, minPosition: 0.05},   
+          { name: 'push', id: 'push', class: Push, data: this.assets.enemies.push, xPercentage: 0.4472, yPercentage: 0.6, minPosition: 0.05},   
 
           
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.59, yPercentage: 0.35 },
