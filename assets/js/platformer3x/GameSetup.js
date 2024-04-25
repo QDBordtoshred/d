@@ -176,6 +176,7 @@ const GameSetup = {
                 hitbox: { widthPercentage: 0.5, heightPercentage: 0.5}
               },
         coin: { src: "/images/platformer/obstacles/coin.png"},
+        star: { src: "/images/platformer/obstacles/star.png"},
         tree: { src: "/images/platformer/obstacles/tree.png",
                 hitbox: { widthPercentage: 0.5, heightPercentage: 0.5}
               },
@@ -588,7 +589,7 @@ const GameSetup = {
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.5576, yPercentage: 1.05 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.29, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.33, yPercentage: 0.75 },
-          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.4584, yPercentage: 0.75 },
+          { name: 'star', id: 'star', class: Star, data: this.assets.obstacles.star, xPercentage: 0.4584, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.37, yPercentage: 0.5 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.41, yPercentage: 0.5 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.45, yPercentage: 0.5 },
