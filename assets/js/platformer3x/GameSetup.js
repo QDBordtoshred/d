@@ -283,11 +283,11 @@ const GameSetup = {
         push: {
           src: "/images/platformer/sprites/push.png",
           width: 200,
-          height: 752,
+          height: 3352,
           scaleSize: 90,
           speedRatio: 0.7,
           xPercentage: 0.6,
-          hitbox: { widthPercentage: 0.0, heightPercentage: 1}
+          hitbox: { widthPercentage: 0.0, heightPercentage: 6}
         },
 
         flyingGoomba: {
@@ -577,9 +577,6 @@ const GameSetup = {
           // GameObject(s), the order is important to z-index...
           { name: 'mini', id: 'background', class: Background, data: this.assets.backgrounds.mini },
           { name: 'rock', id: 'platform', class: Platform, data: this.assets.platforms.rock },
-
-          { name: 'push', id: 'push', class: Push, data: this.assets.enemies.push, xPercentage: 0.4472, yPercentage: 0.6, minPosition: 0.05},   
-
           
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.59, yPercentage: 0.35 },
           { name: 'blocks', id: 'jumpPlatform', class: BlockPlatform, data: this.assets.platforms.lava, xPercentage: 0.6268, yPercentage: 0.35 },
