@@ -3,7 +3,7 @@ import GameObject from './GameObject.js';
 
 export class Star extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
-        super(canvas, image, data, 0.9, 0.9);
+        super(canvas, image, data, 0.5, 0.5);
         this.starX = xPercentage * GameEnv.innerWidth;
         this.starY = yPercentage;
         this.size();
@@ -32,7 +32,7 @@ export class Star extends GameObject {
     // Center and set Coin position with adjustable height and width
     size() {
         const scaledWidth = this.image.width * 0.2;
-        const scaledHeight = this.image.height * 0.2;
+        const scaledHeight = this.image.height * 0.169;
 
         const starX = this.starX;
         const starY = (GameEnv.bottom - scaledHeight) * this.starY;
