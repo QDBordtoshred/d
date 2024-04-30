@@ -3,7 +3,7 @@ import GameObject from './GameObject.js';
 
 export class Coin extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
-        super(canvas, image, data, 0.5, 0.5);
+        super(canvas, image, data, 1, 1);
         this.coinX = xPercentage * GameEnv.innerWidth;
         this.coinY = yPercentage;
         this.size();
