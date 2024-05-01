@@ -20,7 +20,7 @@ export class Star extends GameObject {
         this.ctx.save();
 
         // Rotate the canvas 90 degrees to the left
-        this.ctx.rotate(-Math.PI / 4);
+        this.ctx.rotate(-Math.PI / 2);
 
         // Draw the image at the rotated position (swap x and y)
         this.ctx.drawImage(this.image, -this.image.height, 0);
