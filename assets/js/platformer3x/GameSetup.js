@@ -548,7 +548,7 @@ const GameSetup = {
         new GameLevel( {tag: "avenida", callback: this.playerOffScreenCallBack, objects: avenidaGameObjects } );
 
         // Space Game Level definition...
-        const spaceGameObjects = [
+        const avenidaGameObjects = [
           // GameObject(s), the order is important to z-index...
           { name: 'space', id: 'background', class: Background, data: this.assets.backgrounds.space },
           { name: 'grass', id: 'platform', class: Platform, data: this.assets.platforms.grass },
