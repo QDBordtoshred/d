@@ -3,7 +3,7 @@ import GameObject from './GameObject.js';
 
 export class Star extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
-        super(canvas, image, data, 1, 1);
+        super(canvas, image, data, 0.5, 0.5);
         this.starX = xPercentage * GameEnv.innerWidth;
         this.starY = yPercentage;
         this.size();

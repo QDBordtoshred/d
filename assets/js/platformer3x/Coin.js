@@ -31,8 +31,8 @@ export class Coin extends GameObject {
 
     // Center and set Coin position with adjustable height and width
     size() {
-        const scaledWidth = this.image.width * 0.5;
-        const scaledHeight = this.image.height * 0.5;
+        const scaledWidth = this.image.width * 0.2;
+        const scaledHeight = this.image.height * 0.169;
 
         const coinX = this.coinX;
         const coinY = (GameEnv.bottom - scaledHeight) * this.coinY;
