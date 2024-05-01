@@ -32,7 +32,7 @@ export class Star extends GameObject {
     // Center and set Coin position with adjustable height and width
     size() {
         const scaledWidth = this.image.width * 0.2;
-        const scaledHeight = this.image.height * 0.169;
+        const scaledHeight = this.image.height * 0.2;
 
         const starX = this.starX;
         const starY = (GameEnv.bottom - scaledHeight) * this.starY;
