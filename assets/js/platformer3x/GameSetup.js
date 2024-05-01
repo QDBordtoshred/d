@@ -629,6 +629,13 @@ const GameSetup = {
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.5, yPercentage: 0.5 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.59, yPercentage: 0.75 },
           { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.63, yPercentage: 0.75 },
+
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.8475, yPercentage: 0.5 },
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.8675, yPercentage: 0.5 },
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.8875, yPercentage: 0.5 },
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.9075, yPercentage: 0.5 },
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.9275, yPercentage: 0.5 },
+          { name: 'coin', id: 'coin', class: Coin, data: this.assets.obstacles.coin, xPercentage: 0.9475, yPercentage: 0.5 },
           { name: 'mario', id: 'player', class: PlayerHills, data: this.assets.players.mario },
           { name: 'tube', id: 'tube', class: Tube, data: this.assets.obstacles.tube },
           { name: 'complete', id: 'background', class: BackgroundTransitions,  data: this.assets.backgrounds.complete },
