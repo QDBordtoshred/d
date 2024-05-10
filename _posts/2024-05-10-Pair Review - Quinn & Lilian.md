@@ -1,19 +1,16 @@
-# Pair Review - Quinn & Lilian
-> Pair Review for Principles used to build mini game
-
-## Significant Feature Enhancement
+# Significant Feature Enhancement
 
 As part of the enemies group, we decided to make our significant feature enhancement a mini game within our groups main level 
 
 This blog shows how we incorporated JavaScript Objects, Finite State Machines, and Single Responsibility Principle.
 
-## JavaScript Objects
+# JavaScript Objects
 
 ```javascript
 { name: 'star', id: 'star', class: Star, data: this.assets.obstacles.star, xPercentage: 0.4584, yPercentage: 0.75 },
 ```
 
-## What Are JavaScript Objects?
+# What Are JavaScript Objects?
 
 At its core, JavaScript is an object-oriented language, which means that it treats almost everything as an object. This includes numbers, arrays, functions, and more. A JavaScript object is a collection of properties where each property is composed of a key-value pair. The keys are typically strings (or Symbols), while the values can be anything from strings, numbers, and functions, to other objects.
 
