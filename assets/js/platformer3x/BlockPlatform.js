@@ -1,5 +1,6 @@
 import GameEnv from './GameEnv.js';
 import GameObject from './GameObject.js';
+
 export class BlockPlatform extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
         super(canvas, image, data);
