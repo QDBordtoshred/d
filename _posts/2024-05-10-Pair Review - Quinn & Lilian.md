@@ -189,3 +189,43 @@ Now, each method has a single responsibility, making it easier to read, understa
 For example, if we have a new Enemy that extends the Enemy class, and we want it to have a new movement instead of using the old one. We can just overwrite the method "updateMovement()" by creating a function that has the same name called "updateMovement()" and just put the code we want to overwrite into the new function.
 
 We don't need to go back and change the Enemy class such as adding an if-statement to the code inside the update() function that manages the movement.
+
+## Finite State Programming
+```
+ switch (this.state.collision) {
+            case "tubeU":
+                // 1. Caught in tube
+                if (this.collisionData.touchPoints.this.top && this.collisionData.touchPoints.other.bottom) {
+                    // Position player in the center of the tube
+                    this.x = this.collisionData.newX;
+                    // Using natural gravity wait for player to reach floor
+                    if (Math.abs(this.y - this.bottom) <= GameEnv.gravity) {
+                        // Force end of level condition
+                        GameControl.transitionToLevel(GameEnv.levels[3])
+                    }
+                // 2. Collision between player right and tube
+                } else if (this.collisionData.touchPoints.this.right) {
+                    this.state.movement.right = false;
+                    this.state.movement.left = true;
+                // 3. Collision between player left and tube
+                } else if (this.collisionData.touchPoints.this.left) {
+                    this.state.movement.left = false;
+                    this.state.movement.right = true;
+                }
+                break;
+```
+When the player collides with the top of the tubeU, the player drops downwards and then it transitions to the previous level, or level 3.
+## Single State Responsibility
+```
+ // speed is used to background parallax behavior
+    update() {
+        this.speed = GameEnv.backgroundDirection * this.parallaxSpeed;
+        super.update();
+    }
+    //Cause of limited bg cutout, keeping just incase it causes issues later
+    draw() {
+        this.ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+        super.draw();
+    }
+```
+The update method and the draw method are called separately.
