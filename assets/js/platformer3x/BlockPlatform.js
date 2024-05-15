@@ -16,6 +16,13 @@ export class BlockPlatform extends GameObject {
     draw() {
         this.ctx.drawImage(this.image, 0, 0, this.canvas.width, this.canvas.height);
     }
+    collisionAction() {
+        // check player collision
+        if (this.collisionData.touchPoints.other.id === "player") {
+            this.destroy();
+            GameEnv.playSound("coin");
+        }
+    }
     // Set platform position
     size() {
         // Formula for Height should be on constant ratio, using a proportion of 832
@@ -34,42 +41,6 @@ export class BlockPlatform extends GameObject {
         this.canvas.style.position = 'absolute';
         this.canvas.style.left = `${platformX}px`;
         this.canvas.style.top = `${platformY}px`;
-    }
-    // Player action on collisions
-    collisionAction() {
-        if (this.collisionData.touchPoints.other.id === "player") {
-            // Collision: Top of Goomba with Bottom of Player
-            //console.log(this.collisionData.touchPoints.other.bottom + 'bottom')
-            //console.log(this.collisionData.touchPoints.other.top + "top")
-            //console.log(this.collisionData.touchPoints.other.right + "right")
-            //console.log(this.collisionData.touchPoints.other.left + "left")
-            if (this.collisionData.touchPoints.other.bottom) {
-                GameEnv.invincible = true;
-                GameEnv.goombaBounce = true;
-                this.canvas.style.transition = "transform 1.5s, opacity 1s";
-                this.canvas.style.transition = "transform 2s, opacity 1s";
-                this.canvas.style.transformOrigin = "bottom"; // Set the transform origin to the bottom
-                this.canvas.style.transform = "scaleY(0)"; // Make the Goomba flat
-                this.speed = 0;
-                GameEnv.playSound("goombaDeath");
-
-                setTimeout((function() {
-                    GameEnv.invincible = false;
-                    this.destroy();
-                }).bind(this), 1500);
-            }
-        }
-
-        if (this.collisionData.touchPoints.other.id === "goomba") {
-            if (GameEnv.difficulty !== "impossible" && (this.collisionData.touchPoints.other.left || this.collisionData.touchPoints.other.right)) {
-                this.speed = -this.speed;      
-            }
-        }
-        if (this.collisionData.touchPoints.other.id === "jumpPlatform") {
-            if (this.collisionData.touchPoints.other.left || this.collisionData.touchPoints.other.right) {
-                this.speed = -this.speed;            
-            }
-        }
     }
 }
 export default BlockPlatform;
