@@ -3,7 +3,7 @@ import GameObject from './GameObject.js';
 
 export class BlockPlatform extends GameObject {
     constructor(canvas, image, data, xPercentage, yPercentage) {
-        super(canvas, image, data);
+        super(canvas, image, data, 0.5, 0.5);
         this.platformX = xPercentage * GameEnv.innerWidth;
         this.platformY = yPercentage;
     }
@@ -22,6 +22,16 @@ export class BlockPlatform extends GameObject {
             this.destroy();
             GameEnv.playSound("coin");
         }
+    }
+        
+    // Method to hide the coin
+    hide() {
+        this.canvas.style.display = 'none';
+    }
+
+    // Method to show the coin
+    show() {
+        this.canvas.style.display = 'block';
     }
     // Set platform position
     size() {
