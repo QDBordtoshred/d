@@ -16,13 +16,7 @@ export class BlockPlatform extends GameObject {
     draw() {
         this.ctx.drawImage(this.image, 0, 0, this.canvas.width, this.canvas.height);
     }
-    collisionAction() {
-        // check player collision
-        if (this.collisionData.touchPoints.other.id === "player") {
-            this.destroy();
-            GameEnv.playSound("coin");
-        }
-    }
+
         
     // Method to hide the coin
     hide() {

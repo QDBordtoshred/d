@@ -35,7 +35,13 @@ export class JumpPlatform extends GameObject {
             }
         }        
     }
-
+    collisionAction() {
+        // check player collision
+        if (this.collisionData.touchPoints.other.id === "player") {
+            this.destroy();
+            GameEnv.playSound("coin");
+        }
+    }
     // Set platform position
     size() {
         // Formula for Height should be on constant ratio, using a proportion of 832
